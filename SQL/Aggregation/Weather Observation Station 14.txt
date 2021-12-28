@@ -1,0 +1,15 @@
+/*
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+'*****************************   Jewel Mahmud   *****************************'
+'*****************************  CSE-13th,MBSTU  *****************************'
+'***************************** Date: 28-12-2021 *****************************'
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+problem name: Weather Observation Station 14
+problem link: https://www.hackerrank.com/challenges/weather-observation-station-14/problem?isFullScreen=true
+*/
+
+SELECT ROUND(LAT_N, 4)
+FROM STATION 
+WHERE LAT_N<137.2345
+ORDER BY LAT_N DESC
+LIMIT 1;

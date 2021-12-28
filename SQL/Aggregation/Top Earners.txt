@@ -1,0 +1,13 @@
+/*
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+'*****************************   Jewel Mahmud   *****************************'
+'*****************************  CSE-13th,MBSTU  *****************************'
+'***************************** Date: 28-12-2021 *****************************'
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+problem name: Top Earners
+problem link: https://www.hackerrank.com/challenges/earnings-of-employees/problem?isFullScreen=true
+*/
+
+SELECT MAX(salary*months), COUNT(employee_id)
+FROM Employee 
+WHERE salary*months = (SELECT MAX(salary*months) FROM Employee );

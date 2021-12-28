@@ -1,0 +1,12 @@
+/*
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+'*****************************   Jewel Mahmud   *****************************'
+'*****************************  CSE-13th,MBSTU  *****************************'
+'***************************** Date: 28-12-2021 *****************************'
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+problem name: Average Population
+problem link: https://www.hackerrank.com/challenges/revising-aggregations-the-average-function/problem?isFullScreen=true
+*/
+
+SELECT FlOOR(AVG(POPULATION))
+FROM CITY;

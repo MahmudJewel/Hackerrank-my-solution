@@ -1,0 +1,13 @@
+/*
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+'*****************************   Jewel Mahmud   *****************************'
+'*****************************  CSE-13th,MBSTU  *****************************'
+'***************************** Date: 28-12-2021 *****************************'
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+problem name: Revising Aggregations - The Sum Function
+problem link: https://www.hackerrank.com/challenges/revising-aggregations-sum/problem?isFullScreen=true
+*/
+
+SELECT SUM(POPULATION)
+FROM CITY
+WHERE DISTRICT = 'California';

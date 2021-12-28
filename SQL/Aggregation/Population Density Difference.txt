@@ -1,0 +1,12 @@
+/*
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+'*****************************   Jewel Mahmud   *****************************'
+'*****************************  CSE-13th,MBSTU  *****************************'
+'***************************** Date: 28-12-2021 *****************************'
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+problem name: Population Density Difference
+problem link: https://www.hackerrank.com/challenges/population-density-difference/problem?isFullScreen=true
+*/
+
+SELECT MAX(POPULATION)-MIN(POPULATION)
+FROM CITY;

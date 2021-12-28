@@ -1,0 +1,13 @@
+/*
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+'*****************************   Jewel Mahmud   *****************************'
+'*****************************  CSE-13th,MBSTU  *****************************'
+'***************************** Date: 28-12-2021 *****************************'
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+problem name: Revising Aggregations - The Count Function
+problem link: https://www.hackerrank.com/challenges/revising-aggregations-the-count-function/problem?isFullScreen=false
+*/
+
+SELECT COUNT(NAME)
+FROM CITY
+WHERE POPULATION > 100000;
