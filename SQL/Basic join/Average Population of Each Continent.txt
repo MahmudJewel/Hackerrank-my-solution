@@ -1,0 +1,14 @@
+/*
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+'*****************************   Jewel Mahmud   *****************************'
+'*****************************  CSE-13th,MBSTU  *****************************'
+'***************************** Date: 28-12-2021 *****************************'
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+problem name: Average Population of Each Continent
+problem link: https://www.hackerrank.com/challenges/average-population-of-each-continent/problem?isFullScreen=false
+*/
+
+SELECT COUNTRY.Continent, FLOOR(AVG(CITY.Population))
+FROM CITY JOIN COUNTRY
+ON CITY.COUNTRYCODE = COUNTRY.CODE
+GROUP BY COUNTRY.CONTINENT ;

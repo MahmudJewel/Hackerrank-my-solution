@@ -1,0 +1,14 @@
+/*
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+'*****************************   Jewel Mahmud   *****************************'
+'*****************************  CSE-13th,MBSTU  *****************************'
+'***************************** Date: 22-12-2021 *****************************'
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+problem name: Population Census
+problem link: https://www.hackerrank.com/challenges/asian-population/problem?isFullScreen=false
+*/
+
+SELECT SUM(CITY.POPULATION)
+FROM CITY JOIN COUNTRY
+ON CITY.COUNTRYCODE = COUNTRY.CODE
+WHERE COUNTRY.CONTINENT = 'Asia';

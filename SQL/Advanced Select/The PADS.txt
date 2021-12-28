@@ -1,0 +1,36 @@
+/*""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+'*****************************   Jewel Mahmud   *****************************'
+'*****************************  CSE-13th,MBSTU  *****************************'
+'***************************** Date: 22-12-2021 *****************************'
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+problem name: The PADS
+problem link: https://www.hackerrank.com/challenges/the-pads/problem?isFullScreen=true
+*/
+
+/* solution 1 */
+SELECT CONCAT(Name, "(", LEFT(Occupation,1), ")")
+FROM OCCUPATIONS
+ORDER BY Name;
+
+SELECT CONCAT('There are a total of ', COUNT(Occupation), ' ', LOWER(Occupation), 's.')
+FROM OCCUPATIONS
+GROUP BY Occupation
+ORDER BY COUNT(Occupation) ;
+
+
+/* solution 2
+
+SELECT CONCAT(Name, "(", LEFT(Occupation,1), ")")
+FROM OCCUPATIONS
+ORDER BY Name;
+
+SELECT CONCAT('There are a total of ', COUNT(Occupation), ' ', LOWER(Occupation), 
+              CASE 
+                WHEN COUNT(OCCUPATION) >= 1
+                    THEN 's.'
+                ELSE '.'
+             END)
+FROM OCCUPATIONS
+GROUP BY Occupation
+ORDER BY COUNT(Occupation) ;
+*/

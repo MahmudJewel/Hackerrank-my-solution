@@ -1,0 +1,14 @@
+/*
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+'*****************************   Jewel Mahmud   *****************************'
+'*****************************  CSE-13th,MBSTU  *****************************'
+'***************************** Date: 28-12-2021 *****************************'
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+problem name: African Cities
+problem link: https://www.hackerrank.com/challenges/african-cities/problem?isFullScreen=false
+*/
+
+SELECT CITY.NAME
+FROM CITY JOIN COUNTRY
+ON CITY.COUNTRYCODE = COUNTRY.CODE
+WHERE COUNTRY.CONTINENT = 'Africa';
