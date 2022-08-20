@@ -1,6 +1,2 @@
-import functools
-
-st='bacdf'
-res = functools.reduce(lambda x, y: x + y, sorted(st))
-print(sorted(st))
-print(res)
+dc={1:2, 3:4}
+print(dc[6])
